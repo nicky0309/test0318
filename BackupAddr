@@ -1,0 +1,71 @@
+package client;
+import java.io.File;
+public class Address {
+	
+	public String fileAddr;
+	public String arriveFileAddr;
+	public int slash;
+	public String fileName; //파일명
+	public String file; //FileAddress
+	public String arriveFile;  //TargetFileAddress   Downloadbut   Uploadbut
+	public String tmpAddr = "C:\\FXProject\\tmpmemory";
+	public String tmpmemory;
+	public String getFileAddr() {
+		return fileAddr;
+	}
+	public String getArriveFileAddr() {
+		return arriveFileAddr;
+	}
+	public int getSlash() {
+		return slash;
+	}
+	public String getFileName() {
+		return fileName;
+	}
+	public String getFile() {
+		return file;
+	}
+	public String getArriveFile() {
+		return arriveFile;
+	}
+	public String getTmpAddr() {
+		return tmpAddr;
+	}
+	public String getTmpmemory() {
+		return tmpmemory;
+	}
+	public String setFileAddr(String fileAddr) {
+		this.fileAddr = fileAddr;
+		return fileAddr;
+	}
+	public String setArriveFileAddr(String arriveFileAddr) {
+		this.arriveFileAddr = arriveFileAddr;
+		return arriveFileAddr;
+	}
+	public int setSlash(int slash) {
+		this.slash = slash;
+		return slash;
+	}
+	public String setFileName(String fileName) {
+		this.fileName = fileName;
+		return fileName;
+	}
+	public File setFile(String file) {
+		this.file = file;
+		return new File(file);		
+	}
+	public File setArriveFile(String arriveFileAddr) {
+		this.arriveFile = arriveFileAddr;
+		return new File(arriveFile);
+	}
+	public String setTmpAddr(String tmpAddr) {
+		this.tmpAddr = tmpAddr;
+		return tmpAddr;
+	}
+	public File setTmpmemory(String tmpmemory) {
+		this.tmpmemory = tmpmemory;
+		return new File(tmpmemory+getFileName());
+	}
+	
+	
+}
